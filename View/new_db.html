@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<!-- Sử dụng thuộc tính border bằng CSS -->
+	<base href="http://localhost/testphp/">
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h2>New</h2>
+		<div>
+			<form action="/testphp/Control/new_action_page.php">
+				
+				<label for="title" >Title:</label>
+			 	<input type="text" id="title" name="title" style="width: 40%;margin-left: 20.8%;" placeholder="Title"><br><br>
+			  	<label for="Description">Description:</label>
+			 	<input type="text" id="description" name="description" style="width: 40%;margin-left: 17.15%;" placeholder="Description"><br><br>
+
+
+			 	<label for="Image" stype="margin-left=60%;">Image:</label>
+
+				<img id="blah" alt="No file selected" style="margin-left: 20%;" width="100" height="100"/>
+				<input type="file" id="image" name="image" style="width: 92%;margin-left: 24%; margin-bottom: 20px" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+				
+
+			 	<label for="status">Status:</label>
+				<select id="status" name="status" style="width: 10%;margin-left: 20%;">
+					<option value="Enable">Enable</option>
+				  	<option value="Disable">Disable</option>
+				</select>
+			 	<input type="submit" value="Submit" style="width: 10%;margin-left: 20%;">
+			</form>
+		</div>
+	</body>
+</html>

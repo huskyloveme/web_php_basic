@@ -1,0 +1,18 @@
+RewriteEngine On
+
+#RewriteRule "login" "View/login.html"
+#RewriteRule "index" "index.php"
+#RewriteRule "new_db" "new_db.php"
+
+#RewriteRule "^edit_db/([0-9]+)$" "edit_db.php?id=$1"
+#RewriteRule "^edit_action_page/([0-9]+)$" "edit_action_page.php?id=$1"
+#RewriteRule ^edit_action_page/([0-9]+)$ edit_action_page.php?id=$1 [QSA]
+
+
+#RewriteRule ^show_action_page/2 "show_action_page.php?id=2"
+#RewriteRule "edit_action_page" "edit_action_page.php"
+#RewriteRule "new_action_page" "new_action_page.php"
+
+#RewriteRule ^([a-zA-Z0-9]+)$ "index.php?page=$1&number=$3"
+
+RewriteRule   ^([a-z]{2,2})/([a-zA-Z0-9_-]+)$   "show_action_page.php?id=2" [QSA]
